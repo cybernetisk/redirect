@@ -82,12 +82,23 @@ switch(strtolower($subdomain))
     case 'sm-sjekkliste':
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0AhqWeuIzIBbadDdfRWQ0MlRJbFBPcGFzeDJ0cTBpZ3c');
         die;
+
     case 'wiki':
-        header('Location: http://cyb.ifi.uio.no/aktiv/');
+        // search for something?
+        if ($url)
+        {
+            header('Location: http://cyb.ifi.uio.no/aktiv/index.php?title=Special%A3Search&search='.urlencode($url).'&go=Go');
+        }
+        else
+        {
+            header('Location: http://cyb.ifi.uio.no/aktiv/');
+        }
         die;
 
 // Permanente Wordpress-seksjoner:
     case 'aktiv':
+    case 'frivillig':
+    case 'volunteer':
         header('Location: http://cyb.ifi.uio.no/cyb/aktiv-i-cyb/');
         die;
     case 'ny':
@@ -161,6 +172,9 @@ switch(strtolower($subdomain))
         die;
     case 'skitur':
         header('Location: https://docs.google.com/forms/d/1CLq7o8t52qKMQqCUxEm7KNJ87z2eVszET3Zu343Ksko/viewform#start=embed');
+        die;
+    case 'skitur-hytte':
+        header('Location: https://docs.google.com/forms/d/1-QFtPz2GHvaHx6Hl16DsAVbdI4Djc4ql60dN4Ti0vdw/viewform');
         die;
     case 'faglig-helg':
     case 'fh':
