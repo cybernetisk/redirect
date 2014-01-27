@@ -1,8 +1,15 @@
 <?php
 // *.cyb.no redirectes hit, så kan vi gjøre egne redirecter her selv :)
 
-$ser= explode(".", $_SERVER['QUERY_STRING']);
-switch(strtolower($ser[0])){
+$url = ltrim($_SERVER['REDIRECT_URL'], "/");
+if (!preg_match("~^(.*)\\.cyb\\.no$~i", $_SERVER['HTTP_HOST'], $match))
+{
+    die("Host mismatch!");
+}
+$subdomain = $match[1];
+
+switch(strtolower($subdomain))
+{
 
     case 'testa':
         header('Location: http://google.com');
