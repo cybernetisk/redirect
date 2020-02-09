@@ -1,0 +1,21 @@
+name: Sync files to webserver
+on:
+  push:
+    branches:
+      - master
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Install SSH key
+        env:
+          CYB_SSH_KEY: ${{ secrets.CYB_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$CYB_SSH_KEY" >~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+      - name: Setup known hosts
+        run: ssh-keyscan login.ifi.uio.no >> ~/.ssh/known_hosts
+      - name: Sync files
+        run: rsync -v -a index.php .htaccess cyb@login.ifi.uio.no:automation/github-redirect/
