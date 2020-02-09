@@ -1,5 +1,5 @@
 <?php
-// *.cyb.no redirectes hit, så kan vi gjøre egne redirecter her selv :)
+// *.cyb.no redirectes hit, sÃ¥ kan vi gjÃ¸re egne redirecter her selv :)
 
 $url = ltrim($_SERVER['REDIRECT_URL'], "/");
 if (!preg_match("~^(.*)\\.cyb\\.no$~i", $_SERVER['HTTP_HOST'], $match))
@@ -13,8 +13,8 @@ switch(strtolower($subdomain))
     /* 
      * Tre typer videresendinger:
      *  1. Ofte oppdaterte videresendinger (~1-2 i semesteret)
-     *  2. Forholdsvis faste videresendinger (~1 per to år)
-     *  3. One-off spesialer, mega-stor-fester/artige-quirky videresendinger (nærmest unike)
+     *  2. Forholdsvis faste videresendinger (~1 per to Ã¥r)
+     *  3. One-off spesialer, mega-stor-fester/artige-quirky videresendinger (nÃ¦rmest unike)
      */
 
 
@@ -69,7 +69,7 @@ switch(strtolower($subdomain))
         header('Location: http://realistforeningen.no');
         die;
 
-        // ØKONOMIRELATERT
+        // Ã˜KONOMIRELATERT
     case 'okonomi':
     case 'oko':
         header('Location: http://cyb.no/okonomi/');
@@ -238,7 +238,7 @@ switch(strtolower($subdomain))
         header('Location: http://cyb.no/');
         die;
 
-        // Arrangement-/påmeldingssider:
+        // Arrangement-/pÃ¥meldingssider:
     case '42':
         header('Location: http://cyb.ifi.uio.no/42-3/');
         die;
@@ -277,7 +277,7 @@ switch(strtolower($subdomain))
     case 'rspv':
         header('Location: https://cyb.no/404.html');
         die;
-    case 'gallapåmeldte':
+    case 'gallapÃ¥meldte':
     case 'gjester':
         header('Location: https://docs.google.com/spreadsheets/d/1eFeU1kMJVow0rG1y49jgxUgWofqJUCKx2f1KDKJLn7A');
         die;
@@ -303,7 +303,7 @@ switch(strtolower($subdomain))
         header('Location: http://docs.google.com/spreadsheet/ccc?key=0AglUcicBmEzrdGVyNHoycVlxanBFM3pJWTFabEM1RXc');
         die;
     case 'party': 
-# Ifi-festen i 2011 -- 200-årsjubileet
+# Ifi-festen i 2011 -- 200-Ã¥rsjubileet
         header('Location: http://cyb.ifi.uio.no/festen/?lang=en');
         die;
     case 'patent':
@@ -383,6 +383,6 @@ switch(strtolower($subdomain))
     default:
         header('Location: http://cyb.no');
 
-        // Slutt aa legg inn ting på bunn her, det overkjører default....| 
+        // Slutt aa legg inn ting pÃ¥ bunn her, det overkjÃ¸rer default....| 
 }
 
