@@ -10,69 +10,163 @@ $subdomain = $match[1];
 
 switch(strtolower($subdomain))
 {
+    /* 
+     * Tre typer videresendinger:
+     *  1. Ofte oppdaterte videresendinger (~1-2 i semesteret)
+     *  2. Forholdsvis faste videresendinger (~1 per to år)
+     *  3. One-off spesialer, mega-stor-fester/artige-quirky videresendinger (nærmest unike)
+     */
 
-    case 'testa':
-        header('Location: http://google.com');
+
+    /* 
+     * 2. Forholdsvis faste videresendinger
+     *  - URL-er som ikke skal oppdateres 
+     */
+    case 'git':
+    case 'github':
+        // lenke til generalforsamlingens nyeste dagsorden
+        header('Location: https://github.com/cybernetisk');
         die;
-    
+    case 'api':
+        header('Location: https://in.cyb.no/api/');
+        die;
+    case 'bat':
+    case 'danskebat':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSeXrCjWGXs3fsfI-iLU8b_OPUzsTOknKO_7-fFbXi8NU0NuHw/viewform');
+        die;
+    case 'kjeks':
+        // lenke til generalforsamlingens nyeste dagsorden
+        header('Location: https://cyber.uio.no/paste/?872fe4ac6357e9e5#b/3GfngJiM6C4XaVgGW+Kt6M3ZP3uoTcUHqEGuhIv5U=');
+        die;
+    case 'x':
+        // Lenke til X-gruppas hackathon
+        header('Location: http://cyb.no/x.html');
+        die;
+    case 'hackathon':
+        header('Location: https://github.com/cybernetisk/hackathon');
+        die;
+    case 'salutt':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSexknSTuznQfYB4ljz2F4U4bOsKV_QykCWr4rzslTbsXan83g/viewform?usp=sf_link');
+        die;
+    case 'gf':
+        // lenke til generalforsamlingens nyeste dagsorden
+        header('Location: https://cybernetisk.github.io/docs/generalforsamling/dagsorden.pdf');
+        die;
+    case 'docs':
+        // UTDATERT: lenke til gamle dokumenter
+        header('Location: http://cyb.no/docs/');
+        die;
+    case 'vedtekter':
+        // lenke til nyeste vedtekter
+        header('Location: https://cybernetisk.github.io/docs/vedtekter/vedtekter.pdf');
+        die;
+
+    case 'test':
+        header('Location: http://cyb.no/public/index.html');
+        die;
+
+    case 'rf':
+        header('Location: http://realistforeningen.no');
+        die;
+
+        // ØKONOMIRELATERT
+    case 'okonomi':
     case 'oko':
         header('Location: http://cyb.no/okonomi/');
         die;
-
-// Forum, wiki og andre tjenester:
-    case 'z':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AgxsqTftPgbYdHhQNk52TWZLZlN2M01lUk5Oa3dyT3c');
+    case 'svinn':
+        header('Location: https://in.cyb.no/varer/inventorycount/37/registrations');
         die;
+    case 'z':
+        header('Location: https://docs.google.com/spreadsheets/d/1Bw3rs0_Sq53zL1RY0pbrTAGJnxhOshLh9nwF7EK0hSM/edit#gid=0');
+        die;
+    case 'zstats':
+        header('Location: https://docs.google.com/spreadsheets/d/1RJHnt9RbbvcqfsG1t1BiEKr5upuaH-0nl-oYCetOy-0/edit');
+        die;
+    case 'storesafen':
+        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdFZHU1BYVlZqV2VDeDF1MkFBY1dVNXc&usp=drive_web');
+        die;
+    case 'kontanter':
+        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdElLYk9YVE9MckUyQTFVQ3B4Y1NRZXc&usp=drive_web');
+        die;
+    case 'budsjett':
+    case 'regnskap':
+        header('Location: http://cyb.no/okonomi/budsjett_regnskap/');
+        die;
+    case 'kontoplan':
+        header('Location: https://docs.google.com/spreadsheets/d/1-yiVwoQGM4It-7LpoIsCdQ0rF9oVs7AiSKRjaJp3xI0/edit?usp=sharing');
+        die;
+    case 'sosialemidler':
+        header('Location: https://docs.google.com/spreadsheets/d/1eiJ8ZdSiKwwvXKbciINCcp_fkveeXAXZNaM336uIkLE/edit');
+        die;
+    case 'utlegg':
+        header('Location: http://cyb.no/okonomi/skjemaer/alle/For%20alle/Refunderingsskjema-siste.pdf');
+        die;
+    case 'bestill':
+        header('Location: https://jira.cyb.no/servicedesk/customer/portal/1');
+        die;
+
+    case 'vask':
+        header('Location: https://docs.google.com/spreadsheets/d/1ULbkuRfWzCbi3pgapfZaL2vsKAHbTHlSufSUvRWSi2g/edit#gid=0');
+        die;
+    case 'skapet':
+        header('Location: https://docs.google.com/spreadsheets/d/1-WQfuOUgx5i9b3hng6ZCBxjr84fW5vdUtkCM9MJSN9o/edit#gid=0');
+        die;
+    case 'barmeny':
+        header('Location: https://docs.google.com/document/d/1wiLVIRGQ8dMiD1wm0wtn-d2aaZslaNo5DtfwwIKgNnc');
+        die;
+    case 'drink':
+    case 'drinker':
+    case 'drinkmeny':
+        header('Location: https://docs.google.com/document/d/1dowUcGqDN-GwzEFWB1JHBXAbOXqSD7RRVVxjQErU6qE/edit?usp=sharing');
+        die;
+    case '3t':
+        header('Location: https://tripletex.no/execute/dashboard?contextId=2845076');
+        die;
+
+
+        // Forum, wiki og andre tjenester:
     case 'rapport':
     case 'rapporter':
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0AvHDUXiAiHqUdDNFUUQxaHNldWdWWmhXX2l5c2hweWc&usp=sharing');
         die;
     case 'ordenen':
     case 'orden':
-        header('Location: http://cyb.ifi.uio.no/ordenen/');
+        header('Location: https://wiki.cyb.no/display/orden');
         die;
-    case 'budsjett2013':
-    case 'budsjett13':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0At9BWyjhL887dEh2RFZKbFFWcGZUSlg5NE91QW1Bd1E');
+
+
+        // SM skjema:
+    case 'ferdig':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSc48fb7TmGTdFEJ5At8z3e0dzdnmXM6GuNliry4nOJP1Z808Q/viewform');
         die;
-    case 'budsjett':
-    case 'budsjett2014':
-    case 'budsjett14':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0At9BWyjhL887dGYwcUsxVFNXaFZoYkdwMFB4TTlucEE');
+
+    case 'pr':
+        header('Location: https://jira.cyb.no/servicedesk/customer/portal/3');
         die;
-    case 'budsjett2012':
-    case 'budsjett12':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AoWH8VPaicVedFpUYTBhR1lYMXR0VkwtLWVXLVZWOVE');
-        die;
-    case 'budsjetth2011':
-    case 'budsjetth11':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AvHDUXiAiHqUdGNLeU9hOGdoM1ZvT1EtNng1eDFVakE');
-        die;
-    case 'bong':
-    case 'bong13':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AvM9mrSkURTOdEEtOE8wdnVBYXQ5S25ZV09RWnZ1OUE');
-        die;
-    case 'docs':
-        header('Location: http://cyb.no/docs/');
-        die;
-    case 'vedtekt':
-    case 'vedtekter':
-        header('Location: http://cyb.no/cyb_vedtekter.pdf');
+    case 'promotering':
+    case 'promo':
+        header('Location: https://wiki.cyb.no/display/PR');
         die;
     case 'ical':
-        header('Location: https://www.google.com/calendar/embed?src=cybernetisk.selskab@gmail.com&ctz=Europe/Oslo&gsessionid=OK');
+#header('Location: https://www.google.com/calendar/embed?src=cybernetisk.selskab@gmail.com&ctz=Europe/Oslo&gsessionid=OK');
+        header('Location: https://internt.cyb.no/api/cal/events.ics');
         die;
     case 'ifi-blekka':
         header('Location: http://cyb.ifi.uio.no/docs/ifi-blekka_2011.pdf');
         die;
     case 'irc':
-        header('Location: http://cyb.ifi.uio.no/fora/ircc/');
+        header('Location: http://cyb.no/wordpress/fora/ircc/');
         die;
-    case 'forum':
-        header('Location: http://cyb.ifi.uio.no/smf/');
+    case 'kontaktliste':
+        header('Location: https://wiki.cyb.no/x/QgCd');
         die;
-    case 'gcal':
-        header('Location: http://www.google.com/calendar/embed?src=cybernetisk.selskab%40gmail.com&ctz=Europe/Oslo');
+    case 'grill':
+        header('Location: https://wiki.cyb.no/display/AKTIV/Grillkalender+2015');
+        die;
+    case 'pubtur':
+    case 'p2p':
+        header('Location: https://docs.google.com/spreadsheets/d/1U6t-q4Zi3yXnckOgN0bAnT4fbL4DnyWJIeIK1cQUOV0/edit');
         die;
     case 'refundering':
         header('Location: http://cyb.ifi.uio.no/okonomi/Refunderingsskjema.pdf');
@@ -80,91 +174,136 @@ switch(strtolower($subdomain))
     case 'sm':
     case 'sjekkliste':
     case 'sm-sjekkliste':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AhqWeuIzIBbadDdfRWQ0MlRJbFBPcGFzeDJ0cTBpZ3c');
+        header('Location: https://wiki.cyb.no/display/ESC/Checklist+for+Bar');
+        die;
+    case 'slack':
+        header('Location: https://cybernetisk.slack.com');
+        die;
+    case 'crowd':
+        header('Location: https://jira.cyb.no/crowd/console/login.action');
+        die;    
+    case 'quiz':
+        header('Location: https://docs.google.com/spreadsheets/d/1YOtvGEAYqiyFQIw4JNKsSI0uv7C0TFs2juudUllZN0c/edit?usp=sharing');
+        die;
+    case 'confluence':
+        if ($url) {
+            header('Location: https://wiki.cyb.no/' . $url);
+        } else {
+            header('Location: https://wiki.cyb.no/');
+        }
         die;
 
-    case 'wiki':
-        // search for something?
-        if ($url)
-        {
-            header('Location: http://cyb.ifi.uio.no/aktiv/index.php?title=Special%A3Search&search='.urlencode($url).'&go=Go');
-        }
-        else
-        {
-            header('Location: http://cyb.ifi.uio.no/aktiv/');
-        }
-        die;
-
-// Permanente Wordpress-seksjoner:
     case 'aktiv':
+    case 'ja':
+    case 'join':
+    case 'blimed':
+    case 'bliaktiv':
+    case 'makecybgreatagain':
+    case 'oneofus':
+    case 'joinus':
+    case 'interessert':
     case 'frivillig':
     case 'volunteer':
-        header('Location: http://cyb.ifi.uio.no/cyb/aktiv-i-cyb/');
+    case 'sure':
+    case 'iguess':
+    case 'whynot':
+    case 'jada':
+    case 'woho':
+    case 'hijacked':
+    case 'brainwashed':
+    case 'frivilligtvang':
+    case 'cybislove':
+    case 'loveis':
+    case 'cybislife':
+    case 'lifeis':
+    case 'tvang':
+        header('Location: https://docs.google.com/forms/d/1SxsokxeOv-BQsCDYM8B-mt1tlurcHIGhVmkWT22z20I/viewform');
         die;
     case 'ny':
-        header('Location: http://cyb.ifi.uio.no/cyb/aktiv-i-cyb/');
+        header('Location: http://cyb.no/ny.html');
         die;
+    case 'nei':
+        header('Location: http://folk.uio.no/julianj/andreas/');
+        die;
+    
+    case 'parti':
+        header('Location: http://partiboi.de');
+        die;
+
     case 'blekka':
         header('Location: http://cyb.ifi.uio.no/ifi-blekka/');
         die;
-    case 'cal':
-        header('Location: http://cyb.ifi.uio.no/kalender/');
-        die;
     case 'escape':
     case 'kjeller':
-        header('Location: http://cyb.no/kjeller');
-        die;
-    case 'kafe-info':
-        header('Location: http://cyb.ifi.uio.no/kjeller/kafe/');
+        header('Location: http://cyb.no/');
         die;
 
-// Arrangement-/påmeldingssider:
+        // Arrangement-/påmeldingssider:
     case '42':
         header('Location: http://cyb.ifi.uio.no/42-3/');
         die;
-	case 'fadder':
-		//header('Location: https://spreadsheets.google.com/viewform?formkey=dHoxV0ZRYnl0UlNOTXJrTktQR3ctbGc6MQ#gid=0');
+    case 'fadder':
+        //header('Location: https://spreadsheets.google.com/viewform?formkey=dHoxV0ZRYnl0UlNOTXJrTktQR3ctbGc6MQ#gid=0');
         header('Location: http://82.147.36.214/~mariussm/fadder/');
-		die;
-	case 'fadderuke':
+        die;
+    case 'fadderuke':
     case 'fadderuka':
-	case 'fadderuken':
-		header('Location: http://cyb.ifi.uio.no/fadderuke');
-		die;
+    case 'fadderuken':
+        header('Location: http://cyb.ifi.uio.no/fadderuke');
+        die;
     case 'festen':
         header('Location: http://cyb.ifi.uio.no/festen/');
         die;
     case 'festfunk':
         header('Location: https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dFdvZHVNMHltR1k3NGhWNHZrQ0FMRkE6MQ#gid=0');
         die;
-    case 'fbc':
-        header('Location: https://uio200.basecamphq.com');
-        die;
+    case 'ifi-galla':
     case 'galla':
-        header('Location: http://cyb.ifi.uio.no/2013/09/Ifi-galla_2013/');
+        header('Location: http://cyb.ifi.uio.no/2015/09/Ifi-galla-2015/');
+        die;
+    case 'galla16':
+        header('Location: https://drive.google.com/drive/folders/0B7JLatxDx5L_dFM4UVNOQ3BRT0U?usp=sharing');
+        die;
+
+    case 'gallabudsjett':
+        header('Location: http://docs.google.com/spreadsheet/ccc?key=0Ap3QTlUhm0N9dG5LTUd6UjltSE5VZ0RXTEhndmFrOHc');
         die;
     case 'genfors':
         header('Location: http://cyb.ifi.uio.no/kalender/generalforsamling/');
         die;
+    case 'gallasignup':
+    case 'galla-signup':
+    case 'rsvp':
+    case 'rspv':
+        header('Location: https://cyb.no/404.html');
+        die;
     case 'gallapåmeldte':
-    case 'gallapåmeldte2013':
     case 'gjester':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AglUcicBmEzrdEZmRnU1bENXbXltdGpoLVVBWDFad1E&usp=drive_web#gid=0');
+        header('Location: https://docs.google.com/spreadsheets/d/1eFeU1kMJVow0rG1y49jgxUgWofqJUCKx2f1KDKJLn7A');
         die;
-    case 'hackaton':
-        header('Location: http://cyb.ifi.uio.no/2011/11/hackaton-2-desember/');
-        die;
+
+# Hyttetur
+    case 'cabin':
+    case 'salsa': # Fordi Adrian..
+    case 'hytte':
     case 'hyttetyr':
     case 'hyttetur':
-        header('Location: https://docs.google.com/forms/d/1syagKGQclnm7lYnOgaiPiyTDiscsyGpcFjK7E3V0Om4/viewform');
+    case 'cabin-trip':
+        header('Location: https://docs.google.com/forms/d/1tTFzXTXOWeLemNI6fo7LurPBo5k3Kz-1uXK5kTVbifA?usp=sharing');
         die;
-    case 'illustrator':
-        header('Location: http://cyb.ifi.uio.no/2012/01/illustratorkurs/');
+
+    case 'skitur':
+        header('Location: https://cyb.no/404.html');
         die;
-    case 'jentekveld':
-        header('Location: http://www.facebook.com/event.php?eid=194673667219021');
+    case 'kosetirsdag':
+    case 'koz':
+    case 'kos':
+    case 'kosekveld':
+    case 'tirsdag':
+        header('Location: http://docs.google.com/spreadsheet/ccc?key=0AglUcicBmEzrdGVyNHoycVlxanBFM3pJWTFabEM1RXc');
         die;
     case 'party': 
+# Ifi-festen i 2011 -- 200-årsjubileet
         header('Location: http://cyb.ifi.uio.no/festen/?lang=en');
         die;
     case 'patent':
@@ -179,37 +318,71 @@ switch(strtolower($subdomain))
     case 'faglig-helg':
     case 'fh':
     case 'helg':
-		header('Location: http://cyb.ifi.uio.no/helg/');
-		die;
+        header('Location: http://cyb.ifi.uio.no/helg/');
+        die;
+    case 'midtveis':
+        header('Location: https://www.facebook.com/events/795366147283100/');
+        die;
     case 'whisky':
-        header('Location: https://spreadsheets.google.com/a/lebesbye.com/viewform?formkey=dDQtQ29OQWlvTTRTUDcxWWZ5S2RpYWc6MQ&ifq/');
+        header('Location: https://billetto.no/e/whiskyseminar-host2019-billetter-387527');
         die;
 
-    case 'nord1':
-		header('Location: http://cyb.ifi.uio.no/nord1');
-		die;
+    case 'protokoll':
+        header('Location: http://cyb.no/protokoll/');
+        die;
 
-    //Signup sheets
+        //Signup sheets
+    case 'arr':
+        header('Location: https://docs.google.com/spreadsheets/d/1jiyZb4_vnjgcul6AsqLvPQwsLourdEw8upuWtoLkjcs/edit');
+        //header('Location: https://docs.google.com/spreadsheets/d/1Y2O8HzAngIc3tm8iBvqhf_Vbih1UwAVoiQGlkOEtbcc/edit#gid=0');
+        die;
+    case 'fag':
+        header('Location: https://docs.google.com/spreadsheets/d/1zCOUnSjTfnVJkdE9Fn8wIaHwuqwi_ROk7nXE0yQ1Kac/edit#gid=0 ');
+        die; 
+
     case 'barjobb':
     case 'bar':
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0ArBMpT8sPaNYdFhLcFI4dmt6WWVzYUZLWUVtZEJsenc&usp=sharing');
         die;
 
     case 'kafe':
-        header('Location: https://docs.google.com/forms/d/1_EQ8yptbp0Q2PI77AB2oLntDFOEUSADx0P6P4Rbx1KU/viewform');
+        header('Location: https://docs.google.com/spreadsheets/d/1LQapnYb0pHq5wCXrbY2lxglP55NF78W69TEyQLVXS_I/edit?usp=sharing');
         die;
+
     case 'kafefadder':
     case 'fadderkafe':
-        header('Location: https://docs.google.com/forms/d/1NVLCT6mwXAMsvAwL1V6f-z1nQJDX93f9L-hh1EmReiY/viewform');
+        header('Location: https://docs.google.com/forms/d/1_ZuXsnAPpIzo49o_ALa0JKwsYtHRY7BPo78vzrObzDM/viewform');
         die;
 
-    //Mail-greier
+    case 'santa':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLScmpsPRZdOocSC6Z776wivQWGRK4XmHh0iPoX65Coyj8BZESw/viewform');
+        die;
+
     case 'alumni':
         header('Location: https://sympa.uio.no/cyb.no/info/alumnus');
-        #header('Location: https://sympa.uio.no/ifi.uio.no/info/cyb-alumni');
         die;
 
-	default:
-		header('Location: http://cyb.ifi.uio.no');
+    case 'intern':
+        header('Location: http://in.cyb.no/');
+        die;
+
+    case 'bong':
+        header('Location: http://in.cyb.no/voucher/worklogs');
+        die;
+
+    case 'varer':
+    case 'priser':
+    case 'varepriser':
+        header('Location: http://internt.cyb.no/varer/products');
+        die;
+    case 'innpris':
+        header('Location: https://internt.cyb.no/varer/inventory');
+        die;
+
+    case 'www':
+    default:
+        header('Location: http://cyb.no');
+
+        // Slutt aa legg inn ting på bunn her, det overkjører default....| 
 }
 
