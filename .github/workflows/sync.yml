@@ -7,7 +7,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: Install SSH key
         env:
           CYB_SSH_KEY: ${{ secrets.CYB_SSH_KEY }}
