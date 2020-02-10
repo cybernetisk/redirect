@@ -76,21 +76,14 @@ switch(strtolower($subdomain))
     case 'svinn':
         header('Location: https://in.cyb.no/varer/inventorycount/37/registrations');
         die;
-    case 'z':
-        header('Location: https://docs.google.com/spreadsheets/d/1Bw3rs0_Sq53zL1RY0pbrTAGJnxhOshLh9nwF7EK0hSM/edit#gid=0');
-        die;
-    case 'zstats':
-        header('Location: https://docs.google.com/spreadsheets/d/1RJHnt9RbbvcqfsG1t1BiEKr5upuaH-0nl-oYCetOy-0/edit');
-        die;
     case 'storesafen':
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdFZHU1BYVlZqV2VDeDF1MkFBY1dVNXc&usp=drive_web');
         die;
-    case 'kontanter':
-        header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdElLYk9YVE9MckUyQTFVQ3B4Y1NRZXc&usp=drive_web');
-        die;
     case 'budsjett':
+        header('Location: https://docs.google.com/spreadsheets/d/1GftlK1MdQXfJt8DHCeypSTGb5k5ZQsFw0h_XNcXZBuM/edit');
+        die;
     case 'regnskap':
-        header('Location: http://cyb.no/okonomi/budsjett_regnskap/');
+        header('Location: https://okoreports.cyb.no/');
         die;
     case 'kontoplan':
         header('Location: https://docs.google.com/spreadsheets/d/1-yiVwoQGM4It-7LpoIsCdQ0rF9oVs7AiSKRjaJp3xI0/edit?usp=sharing');
