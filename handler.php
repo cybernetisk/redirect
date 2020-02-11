@@ -133,6 +133,10 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSc48fb7TmGTdFEJ5At8z3e0dzdnmXM6GuNliry4nOJP1Z808Q/viewform');
         die;
 
+    case 'internmail':
+    case 'mailingliste':
+        header('Location: https://groups.google.com/a/cyb.no/forum/#!forum/aktiv');
+        die;
     case 'pr':
         header('Location: https://jira.cyb.no/servicedesk/customer/portal/3');
         die;
