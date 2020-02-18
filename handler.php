@@ -21,6 +21,9 @@ switch(strtolower($subdomain))
      * 2. Forholdsvis faste videresendinger
      *  - URL-er som ikke skal oppdateres 
      */
+    case 'avtaler':
+        header('Location: https://wiki.cyb.no/x/Olor');
+        die;
     case 'git':
     case 'github':
         // lenke til generalforsamlingens nyeste dagsorden
