@@ -288,7 +288,7 @@ switch(strtolower($subdomain))
     case 'hyttetyr':
     case 'hyttetur':
     case 'cabin-trip':
-        header('Location: https://docs.google.com/forms/d/1tTFzXTXOWeLemNI6fo7LurPBo5k3Kz-1uXK5kTVbifA?usp=sharing');
+        header('Location: https://nettskjema.no/a/141045#/page/1');
         die;
 
     case 'skitur':
