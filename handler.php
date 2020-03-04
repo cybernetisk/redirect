@@ -34,7 +34,8 @@ switch(strtolower($subdomain))
         die;
     case 'bat':
     case 'danskebat':
-        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSeXrCjWGXs3fsfI-iLU8b_OPUzsTOknKO_7-fFbXi8NU0NuHw/viewform');
+    case 'danskebåt':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdhyV2uBkYKeiXoXN0Ts12UImknXjsPus-7zHwM61QjhpzQOQ/viewform');
         die;
     case 'kjeks':
         // lenke til generalforsamlingens nyeste dagsorden
