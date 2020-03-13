@@ -95,8 +95,9 @@ switch(strtolower($subdomain))
     case 'sosialemidler':
         header('Location: https://docs.google.com/spreadsheets/d/1eiJ8ZdSiKwwvXKbciINCcp_fkveeXAXZNaM336uIkLE/edit');
         die;
+    case 'refundering':
     case 'utlegg':
-        header('Location: http://cyb.no/okonomi/skjemaer/alle/For%20alle/Refunderingsskjema-siste.pdf');
+        header('Location: https://cyb.no/okonomi/skjemaer/For%20alle/Refunderingsskjema-siste.pdf');
         die;
     case 'bestill':
         header('Location: https://jira.cyb.no/servicedesk/customer/portal/1');
@@ -167,9 +168,6 @@ switch(strtolower($subdomain))
     case 'pubtur':
     case 'p2p':
         header('Location: https://docs.google.com/spreadsheets/d/1U6t-q4Zi3yXnckOgN0bAnT4fbL4DnyWJIeIK1cQUOV0/edit');
-        die;
-    case 'refundering':
-        header('Location: http://cyb.ifi.uio.no/okonomi/Refunderingsskjema.pdf');
         die;
     case 'sm':
     case 'sjekkliste':
