@@ -1,27 +1,20 @@
 # *.cyb.no
 
-Scriptet `index.php` (og derav `handler.php`) kalles for catch-all for
-cyb.no, og lar oss gjøre redirects til andre sider.
+Se [`REDIRECT`](./REDIRECT) filen for mapping over alle subdomener
+og hvilke URL-er de redirecter til.
+
+Dette oppsettet inneholder en server skrevet i
+[Rust](https://www.rust-lang.org) som tar i mot requests og
+sender redirect riktig steg.
 
 ## Deployment
 
 Endringer i dette repoet for `master` branchen dyttes automatisk ut
-på Ifi sine webservere. Se https://github.com/cybernetisk/redirect/actions
+i produksjon. Se https://github.com/cybernetisk/redirect/actions
 
 I GitHub har vi en secret `CYB_SSH_KEY` som inneholder en SSH-nøkkel
-som kun benyttes av dette repoet, som er registrert i
-`~cyb/.ssh/authorized_keys`.
+som kun benyttes av dette repoet, som er registrert på produksjonsserveren.
 
-## Oppsett på cyb-brukeren
+TODO: Oppsett i prod.
 
-`~cyb/www_docs/.htaccess` må inneholde:
-
-```htaccess
-# Rewrite ALL OTHER REQUESTS for processing by the redirect script
-RewriteCond %{HTTP_HOST} !^cyb\.no$
-RewriteCond %{HTTP_HOST} \.cyb\.no$
-RewriteRule ^(.*)$ /redirect/index.php [L,NC]
-```
-
-`~cyb/www_docs/redirect` er symlink til `../automation/github-redirect`,
-som igjen er mappen vi kopierer disse filene til.
+TODO: Testserver?

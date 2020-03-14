@@ -1,0 +1,32 @@
+name: Build and deploy
+on: [push]
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.8'
+      - run: ./build.py
+      - run: sudo apt-get install musl-tools
+      - run: rustup target add x86_64-unknown-linux-musl
+      - uses: actions-rs/cargo@v1
+        with:
+          command: build
+          args: --release --target x86_64-unknown-linux-musl
+      - run: docker build -t redirect .
+
+      # TODO: Test build
+      # TODO: Upload to Docker Hub
+      # TODO: Deploy to prod
+
+      # - name: Install SSH key
+      #   env:
+      #     CYB_SSH_KEY: ${{ secrets.CYB_SSH_KEY }}
+      #   run: |
+      #     mkdir -p ~/.ssh
+      #     echo "$CYB_SSH_KEY" >~/.ssh/id_rsa
+      #     chmod 600 ~/.ssh/id_rsa
+      # - name: Setup known hosts
+      #   run: ssh-keyscan login.ifi.uio.no >> ~/.ssh/known_hosts
