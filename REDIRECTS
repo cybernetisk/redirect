@@ -1,0 +1,321 @@
+# Denne filen fungerer slik:
+# Linjer som ikke har noe whitespace spesifiserer navn på
+# subdomene. Flere kan oppgis etter hverandre.
+# Linjer som har innrykk er adressen det skal videresendes til
+# for de foregående navnene.
+# Firkant uten foregående tekst for kommentarer.
+
+avtaler
+    https://wiki.cyb.no/x/Olor
+
+git
+github
+    https://github.com/cybernetisk
+
+api
+    https://in.cyb.no/api/
+
+bat
+danskebat
+danskebåt
+    https://docs.google.com/forms/d/e/1FAIpQLSdhyV2uBkYKeiXoXN0Ts12UImknXjsPus-7zHwM61QjhpzQOQ/viewform
+
+kjeks
+    https://cyber.uio.no/paste/?872fe4ac6357e9e5#b/3GfngJiM6C4XaVgGW+Kt6M3ZP3uoTcUHqEGuhIv5U=
+
+x
+    http://cyb.no/x.html
+
+hackathon
+    https://github.com/cybernetisk/hackathon
+
+salutt
+    https://docs.google.com/forms/d/e/1FAIpQLSexknSTuznQfYB4ljz2F4U4bOsKV_QykCWr4rzslTbsXan83g/viewform?usp=sf_link
+
+gf
+    https://cybernetisk.github.io/docs/generalforsamling/dagsorden.pdf
+
+# UTDATERT: lenke til gamle dokumenter
+docs
+    http://cyb.no/docs/
+
+vedtekter
+    https://cybernetisk.github.io/docs/vedtekter/vedtekter.pdf
+
+test
+    http://cyb.no/public/index.html
+
+rf
+    http://realistforeningen.no
+
+okonomi
+oko
+    http://cyb.no/okonomi/
+
+svinn
+    https://in.cyb.no/varer/inventorycount/37/registrations
+
+storesafen
+    https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdFZHU1BYVlZqV2VDeDF1MkFBY1dVNXc&usp=drive_web
+
+budsjett
+    https://docs.google.com/spreadsheets/d/1GftlK1MdQXfJt8DHCeypSTGb5k5ZQsFw0h_XNcXZBuM/edit
+
+regnskap
+    https://okoreports.cyb.no/
+
+kontoplan
+    https://docs.google.com/spreadsheets/d/1-yiVwoQGM4It-7LpoIsCdQ0rF9oVs7AiSKRjaJp3xI0/edit?usp=sharing
+
+sosialemidler
+    https://docs.google.com/spreadsheets/d/1eiJ8ZdSiKwwvXKbciINCcp_fkveeXAXZNaM336uIkLE/edit
+
+refundering
+utlegg
+    https://cyb.no/okonomi/skjemaer/For%20alle/Refunderingsskjema-siste.pdf
+
+bestill
+    https://jira.cyb.no/servicedesk/customer/portal/1
+
+vask
+    https://docs.google.com/spreadsheets/d/1ULbkuRfWzCbi3pgapfZaL2vsKAHbTHlSufSUvRWSi2g/edit#gid=0
+
+skapet
+    https://docs.google.com/spreadsheets/d/1-WQfuOUgx5i9b3hng6ZCBxjr84fW5vdUtkCM9MJSN9o/edit#gid=0
+
+barmeny
+    https://docs.google.com/document/d/1wiLVIRGQ8dMiD1wm0wtn-d2aaZslaNo5DtfwwIKgNnc
+
+drink
+drinker
+drinkmeny
+    https://docs.google.com/document/d/1dowUcGqDN-GwzEFWB1JHBXAbOXqSD7RRVVxjQErU6qE/edit?usp=sharing
+
+3t
+    https://tripletex.no/execute/dashboard?contextId=2845076
+
+rapport
+rapporter
+    https://docs.google.com/spreadsheet/ccc?key=0AvHDUXiAiHqUdDNFUUQxaHNldWdWWmhXX2l5c2hweWc&usp=sharing
+
+ordenen
+orden
+    https://wiki.cyb.no/display/orden
+
+ferdig
+    https://docs.google.com/forms/d/e/1FAIpQLSc48fb7TmGTdFEJ5At8z3e0dzdnmXM6GuNliry4nOJP1Z808Q/viewform
+
+internmail
+mailingliste
+    https://groups.google.com/a/cyb.no/forum/#!forum/aktiv
+
+pr
+    https://jira.cyb.no/servicedesk/customer/portal/3
+
+promotering
+promo
+    https://wiki.cyb.no/display/PR
+
+ical
+    # https://www.google.com/calendar/embed?src=cybernetisk.selskab@gmail.com&ctz=Europe/Oslo&gsessionid=OK
+    https://internt.cyb.no/api/cal/events.ics
+
+ifi-blekka
+    http://cyb.ifi.uio.no/docs/ifi-blekka_2011.pdf
+
+irc
+    http://cyb.no/wordpress/fora/ircc/
+
+kontaktliste
+    https://wiki.cyb.no/x/QgCd
+
+grill
+    https://wiki.cyb.no/display/AKTIV/Grillkalender+2015
+
+pubtur
+p2p
+    https://docs.google.com/spreadsheets/d/1U6t-q4Zi3yXnckOgN0bAnT4fbL4DnyWJIeIK1cQUOV0/edit
+
+sm
+sjekkliste
+sm-sjekkliste
+    https://wiki.cyb.no/display/ESC/Checklist+for+Bar
+
+slack
+    https://cybernetisk.slack.com
+
+crowd
+    https://jira.cyb.no/crowd/console/login.action
+
+quiz
+    https://docs.google.com/spreadsheets/d/1YOtvGEAYqiyFQIw4JNKsSI0uv7C0TFs2juudUllZN0c/edit?usp=sharing
+
+confluence
+    https://wiki.cyb.no/
+
+aktiv
+ja
+join
+blimed
+bliaktiv
+makecybgreatagain
+oneofus
+joinus
+interessert
+frivillig
+volunteer
+sure
+iguess
+whynot
+jada
+woho
+hijacked
+brainwashed
+frivilligtvang
+cybislove
+loveis
+cybislife
+lifeis
+tvang
+    https://docs.google.com/forms/d/1SxsokxeOv-BQsCDYM8B-mt1tlurcHIGhVmkWT22z20I/viewform
+
+ny
+    http://cyb.no/ny.html
+
+nei
+    http://folk.uio.no/julianj/andreas/
+
+parti
+    http://partiboi.de
+
+blekka
+    http://cyb.ifi.uio.no/ifi-blekka/
+
+escape
+kjeller
+    http://cyb.no/
+
+42
+    http://cyb.ifi.uio.no/42-3/
+
+fadder
+    # https://spreadsheets.google.com/viewform?formkey=dHoxV0ZRYnl0UlNOTXJrTktQR3ctbGc6MQ#gid=0
+    http://82.147.36.214/~mariussm/fadder/
+
+fadderuke
+fadderuka
+fadderuken
+    http://cyb.ifi.uio.no/fadderuke
+
+festen
+    http://cyb.ifi.uio.no/festen/
+
+festfunk
+    https://docs.google.com/spreadsheet/viewform?hl=en_US&formkey=dFdvZHVNMHltR1k3NGhWNHZrQ0FMRkE6MQ#gid=0
+
+ifi-galla
+galla
+    http://cyb.ifi.uio.no/2015/09/Ifi-galla-2015/
+
+galla16
+    https://drive.google.com/drive/folders/0B7JLatxDx5L_dFM4UVNOQ3BRT0U?usp=sharing
+
+gallabudsjett
+    http://docs.google.com/spreadsheet/ccc?key=0Ap3QTlUhm0N9dG5LTUd6UjltSE5VZ0RXTEhndmFrOHc
+
+genfors
+    http://cyb.ifi.uio.no/kalender/generalforsamling/
+
+gallasignup
+galla-signup
+rsvp
+rspv
+    https://cyb.no/404.html
+
+gallapåmeldte
+gjester
+    https://docs.google.com/spreadsheets/d/1eFeU1kMJVow0rG1y49jgxUgWofqJUCKx2f1KDKJLn7A
+
+cabin
+# Fordi Adrian..
+salsa
+hytte
+hyttetyr
+hyttetur
+cabin-trip
+    https://nettskjema.no/a/141045
+
+skitur
+    https://cyb.no/404.html
+
+kosetirsdag
+koz
+kos
+kosekveld
+tirsdag
+    http://docs.google.com/spreadsheet/ccc?key=0AglUcicBmEzrdGVyNHoycVlxanBFM3pJWTFabEM1RXc
+
+# Ifi-festen i 2011 -- 200-årsjubileet
+party 
+    http://cyb.ifi.uio.no/festen/?lang=en
+
+patent
+    https://dbsearch2.patentstyret.no/Mark/DetailNewWindow.aspx?idappl=201109490%2C&culture=en-GB#.TmdZ0OIsJpc.email
+
+skitur
+    https://docs.google.com/forms/d/1CLq7o8t52qKMQqCUxEm7KNJ87z2eVszET3Zu343Ksko/viewform#start=embed
+
+skitur-hytte
+    https://docs.google.com/forms/d/1-QFtPz2GHvaHx6Hl16DsAVbdI4Djc4ql60dN4Ti0vdw/viewform
+
+faglig-helg
+fh
+helg
+    http://cyb.ifi.uio.no/helg/
+
+midtveis
+    https://www.facebook.com/events/795366147283100/
+
+whisky
+    https://billetto.no/e/whiskyseminar-host2019-billetter-387527
+
+protokoll
+    http://cyb.no/protokoll/
+
+arr
+    # https://docs.google.com/spreadsheets/d/1Y2O8HzAngIc3tm8iBvqhf_Vbih1UwAVoiQGlkOEtbcc/edit#gid=0
+    https://docs.google.com/spreadsheets/d/1jiyZb4_vnjgcul6AsqLvPQwsLourdEw8upuWtoLkjcs/edit
+
+fag
+    https://docs.google.com/spreadsheets/d/1zCOUnSjTfnVJkdE9Fn8wIaHwuqwi_ROk7nXE0yQ1Kac/edit#gid=0 
+
+barjobb
+bar
+    https://docs.google.com/spreadsheet/ccc?key=0ArBMpT8sPaNYdFhLcFI4dmt6WWVzYUZLWUVtZEJsenc&usp=sharing
+
+kafe
+    https://docs.google.com/spreadsheets/d/1LQapnYb0pHq5wCXrbY2lxglP55NF78W69TEyQLVXS_I/edit?usp=sharing
+
+kafefadder
+fadderkafe
+    https://docs.google.com/forms/d/1_ZuXsnAPpIzo49o_ALa0JKwsYtHRY7BPo78vzrObzDM/viewform
+
+santa
+    https://docs.google.com/forms/d/e/1FAIpQLScmpsPRZdOocSC6Z776wivQWGRK4XmHh0iPoX65Coyj8BZESw/viewform
+
+alumni
+    https://sympa.uio.no/cyb.no/info/alumnus
+
+intern
+    http://in.cyb.no/
+
+bong
+    http://in.cyb.no/voucher/worklogs
+
+varer
+priser
+varepriser
+    http://internt.cyb.no/varer/products
+
+innpris
+    https://internt.cyb.no/varer/inventory
