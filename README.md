@@ -1,6 +1,6 @@
 # *.cyb.no
 
-Se [`REDIRECT`](./REDIRECT) filen for mapping over alle subdomener
+Se [`REDIRECTS`](./REDIRECTS) filen for mapping over alle subdomener
 og hvilke URL-er de redirecter til.
 
 Dette oppsettet inneholder en server skrevet i
