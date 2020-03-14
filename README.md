@@ -1,4 +1,4 @@
-# *.cyb.no
+# `*.cyb.no`
 
 Se [`REDIRECTS`](./REDIRECTS) filen for mapping over alle subdomener
 og hvilke URL-er de redirecter til.
