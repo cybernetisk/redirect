@@ -377,6 +377,10 @@ switch(strtolower($subdomain))
         header('Location: https://internt.cyb.no/varer/inventory');
         die;
 
+    case 'taxi':
+        header('Location: https://wiki.cyb.no/x/kHwr');
+        die;
+    
     case 'www':
     default:
         header('Location: http://cyb.no');
