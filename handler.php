@@ -331,7 +331,7 @@ switch(strtolower($subdomain))
 
     case 'poeng':
         header('Location: https://docs.google.com/spreadsheets/d/1hHWw6vM7fgd8pJgzB79Q-B0TNA81Dk0F7sN7XMLoKh8/edit#gid=0');
-        
+        die;
         //Signup sheets
     case 'arr':
         header('Location: https://docs.google.com/spreadsheets/d/1jiyZb4_vnjgcul6AsqLvPQwsLourdEw8upuWtoLkjcs/edit');
