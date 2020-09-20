@@ -273,7 +273,7 @@ switch(strtolower($subdomain))
     case 'galla-signup':
     case 'rsvp':
     case 'rspv':
-        header('Location: https://forms.gle/5EYjJo7mxbN1gaej7');
+        header('Location: https://forms.gle/aEifogx3wsfJr1Nn8');
         die;
     case 'rsvp-hjelp':
         header('Location: https://forms.gle/pKuCDYcm75qWR3k79');
