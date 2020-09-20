@@ -273,7 +273,10 @@ switch(strtolower($subdomain))
     case 'galla-signup':
     case 'rsvp':
     case 'rspv':
-        header('Location: https://cyb.no/404.html');
+        header('Location: https://forms.gle/5EYjJo7mxbN1gaej7');
+        die;
+    case 'rsvp-hjelp':
+        header('Location: https://forms.gle/pKuCDYcm75qWR3k79');
         die;
     case 'gallapåmeldte':
     case 'gjester':
