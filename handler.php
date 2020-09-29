@@ -131,8 +131,16 @@ switch(strtolower($subdomain))
     case 'orden':
         header('Location: https://wiki.cyb.no/display/orden');
         die;
-
-
+        
+        //smittesporing
+    case '19':
+    case 'corona'
+    case 'korona'
+    case 'smitte'
+    case 'virus'
+        header('Location: https://forms.gle/EnxQsngoepMZydMt6');
+        die;
+        
         // SM skjema:
     case 'ferdig':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSc48fb7TmGTdFEJ5At8z3e0dzdnmXM6GuNliry4nOJP1Z808Q/viewform');
