@@ -134,10 +134,10 @@ switch(strtolower($subdomain))
         
         //smittesporing
     case '19':
-    case 'corona'
-    case 'korona'
-    case 'smitte'
-    case 'virus'
+    case 'corona':
+    case 'korona':
+    case 'smitte':
+    case 'virus':
         header('Location: https://forms.gle/EnxQsngoepMZydMt6');
         die;
         
