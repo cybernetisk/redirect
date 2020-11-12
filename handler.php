@@ -148,7 +148,7 @@ switch(strtolower($subdomain))
 
     case 'internmail':
     case 'mailingliste':
-        header('Location: https://groups.google.com/a/cyb.no/forum/#!forum/aktiv');
+        header('Location: https://groups.google.com/a/cyb.no/g/aktiv');
         die;
     case 'pr':
         header('Location: https://jira.cyb.no/servicedesk/customer/portal/3');
