@@ -67,7 +67,9 @@ switch(strtolower($subdomain))
     case 'test':
         header('Location: http://cyb.no/public/index.html');
         die;
-
+    case 'discord':
+        header('Location: https://discord.gg/Kur7jzs');
+        die;
     case 'rf':
         header('Location: http://realistforeningen.no');
         die;
