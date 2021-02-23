@@ -68,6 +68,7 @@ switch(strtolower($subdomain))
         header('Location: http://cyb.no/public/index.html');
         die;
     case 'discord':
+    case 'koscord':
         header('Location: https://discord.gg/Kur7jzs');
         die;
     case 'rf':
