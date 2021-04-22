@@ -226,7 +226,7 @@ switch(strtolower($subdomain))
     case 'cybislife':
     case 'lifeis':
     case 'tvang':
-        header('Location: https://docs.google.com/forms/d/1SxsokxeOv-BQsCDYM8B-mt1tlurcHIGhVmkWT22z20I/viewform');
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdnUkCb8c5LOaqLazyHe38aZRNwvBcynotXHs-koAIpPDUujw/viewform?usp=sf_link');
         die;
     case 'ny':
         header('Location: http://cyb.no/ny.html');
