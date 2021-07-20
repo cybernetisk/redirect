@@ -348,7 +348,7 @@ switch(strtolower($subdomain))
         die;
         //Signup sheets
     case 'arr':
-        header('Location: https://docs.google.com/spreadsheets/d/1jiyZb4_vnjgcul6AsqLvPQwsLourdEw8upuWtoLkjcs/edit');
+        header('Location: https://docs.google.com/spreadsheets/d/1gNIIPnveDSeb_WJ99zzxvHrQTry5dOBuxcwIILw1qls/edit#gid=0');
         //header('Location: https://docs.google.com/spreadsheets/d/1Y2O8HzAngIc3tm8iBvqhf_Vbih1UwAVoiQGlkOEtbcc/edit#gid=0');
         die;
     case 'fag':
