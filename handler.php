@@ -113,7 +113,7 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/spreadsheets/d/1-WQfuOUgx5i9b3hng6ZCBxjr84fW5vdUtkCM9MJSN9o/edit#gid=0');
         die;
     case 'barmeny':
-        header('Location: https://drive.google.com/file/d/1P_pzDBs0ybk-yVJWhjp_apJUX-XeixZF/view?usp=sharing');
+        header('Location: https://drive.google.com/file/d/1kyAWoIAMmKGGJIT1241aUKvIotR2uNwA/view?usp=sharing');
         die;
     case 'drink':
     case 'drinker':
