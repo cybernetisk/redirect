@@ -116,8 +116,10 @@ switch(strtolower($subdomain))
     case 'menu':
     case 'm':
     case 'barmeny':
-        header('Location: https://drive.google.com/file/d/1kyAWoIAMmKGGJIT1241aUKvIotR2uNwA/view?usp=sharing');
+        header('Location: https://drive.google.com/file/d/18pgjvfnsUb5v9gQaWxMl22UCSQsAIY7K/view?usp=sharing');
         die;
+    case 'kantine':
+        header('https://drive.google.com/file/d/1JiLpBOEKRDt9i5NPXvChq6-wEe_GSSv5/view?usp=sharing');
     case 'drink':
     case 'drinker':
     case 'drinkmeny':
