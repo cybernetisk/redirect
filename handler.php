@@ -120,6 +120,7 @@ switch(strtolower($subdomain))
         die;
     case 'kantine':
         header('https://drive.google.com/file/d/1JiLpBOEKRDt9i5NPXvChq6-wEe_GSSv5/view?usp=sharing');
+        die;
     case 'drink':
     case 'drinker':
     case 'drinkmeny':
