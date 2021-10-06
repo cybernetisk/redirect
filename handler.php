@@ -404,6 +404,11 @@ switch(strtolower($subdomain))
     case 'taxi':
         header('Location: https://wiki.cyb.no/x/kHwr');
         die;
+
+    case 'sifra':
+    case 'siifra':
+        header('Location: https://docs.google.com/forms/d/1Ph-nLXNx_-pcaWKyzYuEMmrzc6E2Faq60cWegvnEtos');
+        die;
     
     case 'www':
     default:
