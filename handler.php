@@ -233,6 +233,7 @@ switch(strtolower($subdomain))
     case 'cybislife':
     case 'lifeis':
     case 'tvang':
+    case '2kr':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdnUkCb8c5LOaqLazyHe38aZRNwvBcynotXHs-koAIpPDUujw/viewform?usp=sf_link');
         die;
     case 'ny':
