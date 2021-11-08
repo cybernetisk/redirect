@@ -348,7 +348,7 @@ switch(strtolower($subdomain))
         die;
 
     case 'protokoll':
-        header('Location: http://cyb.no/protokoll/');
+        header('Location: http://github.com/cybernetisk/docs/protokoll');
         die;
 
     case 'poeng':
