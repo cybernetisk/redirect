@@ -53,7 +53,7 @@ switch(strtolower($subdomain))
         die;
     case 'gf':
         // lenke til generalforsamlingens nyeste dagsorden
-        header('Location: https://github.com/cybernetisk/docs/raw/master/generalforsamling/21V/dagsorden-21V.pdf');
+        header('Location: https://github.com/cybernetisk/docs/raw/master/generalforsamling/21H/Dagsorden_Generalforsamling_2021H.pdf');
         die;
     case 'docs':
         // UTDATERT: lenke til gamle dokumenter
