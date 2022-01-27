@@ -160,13 +160,13 @@ switch(strtolower($subdomain))
     case 'mailingliste':
         header('Location: https://groups.google.com/a/cyb.no/g/aktiv');
         die;
-    case 'pr':
-        header('Location: https://jira.cyb.no/servicedesk/customer/portal/3');
-        die;
+        
     case 'promotering':
     case 'promo':
-        header('Location: https://wiki.cyb.no/display/PR');
+    case 'pr':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSeh73w5IkAkWkY_RRPJixipvMPkyxMGfMPs45XDgV3994ykjA/viewform?usp=sf_link');
         die;
+ 
     case 'ical':
 #header('Location: https://www.google.com/calendar/embed?src=cybernetisk.selskab@gmail.com&ctz=Europe/Oslo&gsessionid=OK');
         header('Location: https://internt.cyb.no/api/cal/events.ics');
