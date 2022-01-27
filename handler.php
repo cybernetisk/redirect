@@ -22,7 +22,7 @@ switch(strtolower($subdomain))
      *  - URL-er som ikke skal oppdateres 
      */
     case 'avtaler':
-        header('Location: https://wiki.cyb.no/x/bo7JBQ');
+        header('Location: https://wiki.cyb.no/x/vpTJBQ');
         die;
     case 'git':
     case 'github':
