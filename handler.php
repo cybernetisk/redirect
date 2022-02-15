@@ -112,11 +112,10 @@ switch(strtolower($subdomain))
     case 'skapet':
         header('Location: https://docs.google.com/spreadsheets/d/1-WQfuOUgx5i9b3hng6ZCBxjr84fW5vdUtkCM9MJSN9o/edit#gid=0');
         die;
-    case 'meny':
     case 'menu':
     case 'm':
     case 'barmeny':
-        header('Location: https://drive.google.com/file/d/18pgjvfnsUb5v9gQaWxMl22UCSQsAIY7K/view?usp=sharing');
+        header('Location: https://meny.cyb.no');
         die;
     case 'kantina':
     case 'kantine':
