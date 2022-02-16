@@ -168,7 +168,7 @@ switch(strtolower($subdomain))
  
     case 'ical':
 #header('Location: https://www.google.com/calendar/embed?src=cybernetisk.selskab@gmail.com&ctz=Europe/Oslo&gsessionid=OK');
-        header('Location: https://internt.cyb.no/api/cal/events.ics');
+        header('Location: https://in.cyb.no/api/cal/events.ics');
         die;
     case 'ifi-blekka':
         header('Location: http://cyb.ifi.uio.no/docs/ifi-blekka_2011.pdf');
@@ -395,10 +395,10 @@ switch(strtolower($subdomain))
     case 'varer':
     case 'priser':
     case 'varepriser':
-        header('Location: http://internt.cyb.no/varer/products');
+        header('Location: http://in.cyb.no/varer/products');
         die;
     case 'innpris':
-        header('Location: https://internt.cyb.no/varer/inventory');
+        header('Location: https://in.cyb.no/varer/inventory');
         die;
 
     case 'taxi':
