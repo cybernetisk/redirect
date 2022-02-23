@@ -410,6 +410,10 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/forms/d/1Ph-nLXNx_-pcaWKyzYuEMmrzc6E2Faq60cWegvnEtos');
         die;
     
+    case 'nykasse':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdP_P9HLB21GArdjv5oFUNIMt3M_FaALkdvHYa8ZEfVs9ZcEw/viewform?usp=sf_link');
+        die;
+    
     case 'www':
     default:
         header('Location: http://cyb.no');
