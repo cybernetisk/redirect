@@ -110,7 +110,7 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/spreadsheets/d/1ULbkuRfWzCbi3pgapfZaL2vsKAHbTHlSufSUvRWSi2g/edit#gid=0');
         die;
     case 'skapet':
-        header('Location: https://docs.google.com/spreadsheets/d/1-WQfuOUgx5i9b3hng6ZCBxjr84fW5vdUtkCM9MJSN9o/edit#gid=0');
+        header('Location: https://docs.google.com/spreadsheets/d/1SPhd8FMb8TtZ5ahS09_CBEOPqHjAXOd_qL-pq0eSIJU/edit?usp=sharing');
         die;
     case 'menu':
     case 'm':
