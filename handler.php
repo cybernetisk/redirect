@@ -415,7 +415,7 @@ switch(strtolower($subdomain))
         die;
         
     case 'rydding':
-        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdyHyTMaUEg1o-2v0j4ZLgXRPeu_gZ_lXAwcIQi8X-kuJeeeA/viewform')
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdyHyTMaUEg1o-2v0j4ZLgXRPeu_gZ_lXAwcIQi8X-kuJeeeA/viewform');
         die;
             
     case 'www':
