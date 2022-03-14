@@ -413,7 +413,11 @@ switch(strtolower($subdomain))
     case 'nykasse':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdP_P9HLB21GArdjv5oFUNIMt3M_FaALkdvHYa8ZEfVs9ZcEw/viewform?usp=sf_link');
         die;
-    
+        
+    case 'rydding':
+        header('https://docs.google.com/forms/d/190kUifkmdNYYuY5KMLINhf3xVy96En7PuuLBrwzYOF8/edit')
+        die;
+            
     case 'www':
     default:
         header('Location: http://cyb.no');
