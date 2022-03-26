@@ -381,7 +381,7 @@ switch(strtolower($subdomain))
         die;
 
     case 'alumni':
-        header('Location: https://sympa.uio.no/cyb.no/info/alumnus');
+        header('Location: https://groups.google.com/a/cyb.no/g/alumnus');
         die;
 
     case 'intern':
