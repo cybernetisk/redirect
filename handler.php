@@ -69,7 +69,7 @@ switch(strtolower($subdomain))
         die;
     case 'discord':
     case 'koscord':
-        header('Location: https://discord.gg/Kur7jzs');
+        header('Location: https://discord.gg/tRaSgSC9vr');
         die;
     case 'rf':
         header('Location: http://realistforeningen.no');
