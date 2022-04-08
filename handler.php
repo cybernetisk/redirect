@@ -55,7 +55,7 @@ switch(strtolower($subdomain))
         // lenke til generalforsamlingens nyeste dagsorden
         header('Location: https://github.com/cybernetisk/docs/raw/master/generalforsamling/21H/Dagsorden_Generalforsamling_2021H.pdf');
         die;
-    case 'forslag':
+    case 'forslagskjema':
     case 'vedtektsforslagskjema':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdhWfLlt2OQUkI_0XY5LSrlMbvPIu-JVJ744hjQjXdMpx4psQ/viewform?usp=sf_link');
         die;
