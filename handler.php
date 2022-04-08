@@ -26,7 +26,6 @@ switch(strtolower($subdomain))
         die;
     case 'git':
     case 'github':
-        // lenke til generalforsamlingens nyeste dagsorden
         header('Location: https://github.com/cybernetisk');
         die;
     case 'api':
@@ -38,7 +37,6 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdhyV2uBkYKeiXoXN0Ts12UImknXjsPus-7zHwM61QjhpzQOQ/viewform');
         die;
     case 'kjeks':
-        // lenke til generalforsamlingens nyeste dagsorden
         header('Location: https://cyber.uio.no/paste/?872fe4ac6357e9e5#b/3GfngJiM6C4XaVgGW+Kt6M3ZP3uoTcUHqEGuhIv5U=');
         die;
     case 'x':
@@ -51,10 +49,22 @@ switch(strtolower($subdomain))
     case 'salutt':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSexknSTuznQfYB4ljz2F4U4bOsKV_QykCWr4rzslTbsXan83g/viewform?usp=sf_link');
         die;
+
+    // Generalforsamling stuff:    
     case 'gf':
         // lenke til generalforsamlingens nyeste dagsorden
         header('Location: https://github.com/cybernetisk/docs/raw/master/generalforsamling/21V/dagsorden-21V.pdf');
         die;
+    case 'forslag':
+    case 'vedtektsforslagskjema':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdhWfLlt2OQUkI_0XY5LSrlMbvPIu-JVJ744hjQjXdMpx4psQ/viewform?usp=sf_link');
+        die;
+    case 'forslag':
+    case 'vedtektsforslag':
+        header('Location: https://docs.google.com/spreadsheets/d/1_qQCiP7PjmyoVKYYG19gAqsqbEdWP1hzxO1fjyNQWzc/edit?usp=sharing');
+        die;
+
+        
     case 'docs':
         // UTDATERT: lenke til gamle dokumenter
         header('Location: http://cyb.no/docs/');
