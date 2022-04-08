@@ -22,7 +22,7 @@ switch(strtolower($subdomain))
      *  - URL-er som ikke skal oppdateres 
      */
     case 'avtaler':
-        header('Location: https://wiki.cyb.no/x/Olor');
+        header('Location: https://wiki.cyb.no/x/vpTJBQ');
         die;
     case 'git':
     case 'github':
@@ -53,7 +53,7 @@ switch(strtolower($subdomain))
     // Generalforsamling stuff:    
     case 'gf':
         // lenke til generalforsamlingens nyeste dagsorden
-        header('Location: https://github.com/cybernetisk/docs/raw/master/generalforsamling/21V/dagsorden-21V.pdf');
+        header('Location: https://github.com/cybernetisk/docs/raw/master/generalforsamling/21H/Dagsorden_Generalforsamling_2021H.pdf');
         die;
     case 'forslag':
     case 'vedtektsforslagskjema':
@@ -79,7 +79,7 @@ switch(strtolower($subdomain))
         die;
     case 'discord':
     case 'koscord':
-        header('Location: https://discord.gg/Kur7jzs');
+        header('Location: https://discord.gg/tRaSgSC9vr');
         die;
     case 'rf':
         header('Location: http://realistforeningen.no');
@@ -91,13 +91,13 @@ switch(strtolower($subdomain))
         header('Location: http://cyb.no/okonomi/');
         die;
     case 'svinn':
-        header('Location: https://in.cyb.no/varer/inventorycount/37/registrations');
+        header('Location: https://in.cyb.no/varer/inventorycount/44/registrations');
         die;
     case 'storesafen':
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdFZHU1BYVlZqV2VDeDF1MkFBY1dVNXc&usp=drive_web');
         die;
     case 'budsjett':
-        header('Location: https://docs.google.com/spreadsheets/d/1GftlK1MdQXfJt8DHCeypSTGb5k5ZQsFw0h_XNcXZBuM/edit');
+        header('Location: https://docs.google.com/spreadsheets/d/103q1jbAU22ctShB5Gf-4U2Lh5A7MaMFRl0g7xHh9bTU/edit');
         die;
     case 'regnskap':
         header('Location: https://okoreports.cyb.no/');
@@ -120,13 +120,12 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/spreadsheets/d/1ULbkuRfWzCbi3pgapfZaL2vsKAHbTHlSufSUvRWSi2g/edit#gid=0');
         die;
     case 'skapet':
-        header('Location: https://docs.google.com/spreadsheets/d/1-WQfuOUgx5i9b3hng6ZCBxjr84fW5vdUtkCM9MJSN9o/edit#gid=0');
+        header('Location: https://docs.google.com/spreadsheets/d/1SPhd8FMb8TtZ5ahS09_CBEOPqHjAXOd_qL-pq0eSIJU/edit?usp=sharing');
         die;
-    case 'meny':
     case 'menu':
     case 'm':
     case 'barmeny':
-        header('Location: https://drive.google.com/file/d/18pgjvfnsUb5v9gQaWxMl22UCSQsAIY7K/view?usp=sharing');
+        header('Location: https://meny.cyb.no');
         die;
     case 'kantina':
     case 'kantine':
@@ -170,16 +169,16 @@ switch(strtolower($subdomain))
     case 'mailingliste':
         header('Location: https://groups.google.com/a/cyb.no/g/aktiv');
         die;
-    case 'pr':
-        header('Location: https://jira.cyb.no/servicedesk/customer/portal/3');
-        die;
+        
     case 'promotering':
     case 'promo':
-        header('Location: https://wiki.cyb.no/display/PR');
+    case 'pr':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSeh73w5IkAkWkY_RRPJixipvMPkyxMGfMPs45XDgV3994ykjA/viewform?usp=sf_link');
         die;
+ 
     case 'ical':
 #header('Location: https://www.google.com/calendar/embed?src=cybernetisk.selskab@gmail.com&ctz=Europe/Oslo&gsessionid=OK');
-        header('Location: https://internt.cyb.no/api/cal/events.ics');
+        header('Location: https://in.cyb.no/api/cal/events.ics');
         die;
     case 'ifi-blekka':
         header('Location: http://cyb.ifi.uio.no/docs/ifi-blekka_2011.pdf');
@@ -392,7 +391,7 @@ switch(strtolower($subdomain))
         die;
 
     case 'alumni':
-        header('Location: https://sympa.uio.no/cyb.no/info/alumnus');
+        header('Location: https://groups.google.com/a/cyb.no/g/alumnus');
         die;
 
     case 'intern':
@@ -406,10 +405,10 @@ switch(strtolower($subdomain))
     case 'varer':
     case 'priser':
     case 'varepriser':
-        header('Location: http://internt.cyb.no/varer/products');
+        header('Location: http://in.cyb.no/varer/products');
         die;
     case 'innpris':
-        header('Location: https://internt.cyb.no/varer/inventory');
+        header('Location: https://in.cyb.no/varer/inventory');
         die;
 
     case 'taxi':
@@ -421,6 +420,14 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/forms/d/1Ph-nLXNx_-pcaWKyzYuEMmrzc6E2Faq60cWegvnEtos');
         die;
     
+    case 'nykasse':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdP_P9HLB21GArdjv5oFUNIMt3M_FaALkdvHYa8ZEfVs9ZcEw/viewform?usp=sf_link');
+        die;
+        
+    case 'rydding':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdyHyTMaUEg1o-2v0j4ZLgXRPeu_gZ_lXAwcIQi8X-kuJeeeA/viewform');
+        die;
+            
     case 'www':
     default:
         header('Location: http://cyb.no');
