@@ -78,7 +78,7 @@ switch(strtolower($subdomain))
     case 'akke':
     case 'loff':
     case 'akkeloff':
-        header('Location: https://docs.google.com/forms/d/1ij0O-Cch-VF9iHryiF0nMZ6sfVhEuG5JPRhq2mBM8tU');
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSfleEvye7KNN5lCkIvvlluCLK1lHDav0LjcjQVOq7QlpQ2yIw/viewform');
         die;
 
         // ØKONOMIRELATERT
