@@ -75,6 +75,12 @@ switch(strtolower($subdomain))
         header('Location: http://realistforeningen.no');
         die;
 
+    case 'akke':
+    case 'loff':
+    case 'akkeloff':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSfleEvye7KNN5lCkIvvlluCLK1lHDav0LjcjQVOq7QlpQ2yIw/viewform');
+        die;
+
         // ØKONOMIRELATERT
     case 'okonomi':
     case 'oko':
