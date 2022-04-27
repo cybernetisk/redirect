@@ -63,7 +63,9 @@ switch(strtolower($subdomain))
     case 'vedtektsforslag':
         header('Location: https://docs.google.com/spreadsheets/d/1_qQCiP7PjmyoVKYYG19gAqsqbEdWP1hzxO1fjyNQWzc/edit?usp=sharing');
         die;
-
+    case 'skjematilbakemelding':
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLScusQ46sAd138aaYNb26TCurAbFRcDwcTclQcBu4k1xV8GxZw/viewform?usp=sf_link');
+        die;
         
     case 'docs':
         // UTDATERT: lenke til gamle dokumenter
