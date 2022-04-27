@@ -53,7 +53,7 @@ switch(strtolower($subdomain))
     // Generalforsamling stuff:    
     case 'gf':
         // lenke til generalforsamlingens nyeste dagsorden
-        header('Location: https://github.com/cybernetisk/docs/raw/master/generalforsamling/21H/Dagsorden_Generalforsamling_2021H.pdf');
+        header('Location: https://github.com/cybernetisk/docs/blob/master/generalforsamling/V22/Ekstraordin%C3%A6r/Dagsorden_Ekstraordin%C3%A6r_Generalforsamling_2022V.pdf');
         die;
     case 'forslagskjema':
     case 'vedtektsforslagskjema':
