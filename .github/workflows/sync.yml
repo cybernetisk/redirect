@@ -13,9 +13,9 @@ jobs:
           CYB_SSH_KEY: ${{ secrets.CYB_SSH_KEY }}
         run: |
           mkdir -p ~/.ssh
-          echo "$CYB_SSH_KEY" >~/.ssh/id_rsa
+          echo "$CYB_SSH_KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
       - name: Setup known hosts
-        run: ssh-keyscan login.ifi.uio.no >> ~/.ssh/known_hosts
+        run: ssh-keyscan puffypenguin.cyb.no >> ~/.ssh/known_hosts
       - name: Sync files
-        run: rsync -v -a index.php handler.php .htaccess cyb@login.ifi.uio.no:automation/github-redirect/
+        run: rsync -v index.php handler.php openbsd@puffypenguin.cyb.no:/var/www/htdocs/
