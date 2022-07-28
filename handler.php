@@ -283,7 +283,7 @@ switch(strtolower($subdomain))
     case 'fadderuke':
     case 'fadderuka':
     case 'fadderuken':
-        header('Location: http://cyb.ifi.uio.no/fadderuke');
+        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSfseWVmaCGz21WqCMqRE8qex4lILJ0jTpXEmbU2zFXNQ4Q1ZQ/viewform?usp=sf_link');
         die;
     case 'festen':
         header('Location: http://cyb.ifi.uio.no/festen/');
