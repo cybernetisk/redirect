@@ -435,6 +435,14 @@ switch(strtolower($subdomain))
     case 'rydding':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdyHyTMaUEg1o-2v0j4ZLgXRPeu_gZ_lXAwcIQi8X-kuJeeeA/viewform');
         die;
+        
+    case 'teller1':
+        header('Location: https://www.capacitycounter.com/ca?l=d7d57b4f63');
+        die;
+        
+    case 'teller2':
+        header('Location: https://www.capacitycounter.com/ca?l=e5d58d16de');
+        die;
             
     case 'www':
     default:
