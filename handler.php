@@ -439,6 +439,10 @@ switch(strtolower($subdomain))
     case 'venteliste':
         header('Location: https://forms.gle/XfKvCnU5UXxj4f4L6');
         die;
+        
+    case 'utlan':
+        header('Location: https://docs.google.com/spreadsheets/d/1QvCbuJnq4EVmdDDaKU1GbcfXuJgVhH3T8I8CA8f_rhk/edit#gid=0');
+        die;
             
     case 'www':
     default:
