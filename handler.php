@@ -440,10 +440,14 @@ switch(strtolower($subdomain))
         header('Location: https://forms.gle/XfKvCnU5UXxj4f4L6');
         die;
         
-    case 'utlan':
+    case 'utlansoversikt':
         header('Location: https://docs.google.com/spreadsheets/d/1QvCbuJnq4EVmdDDaKU1GbcfXuJgVhH3T8I8CA8f_rhk/edit#gid=0');
         die;
             
+    case 'tilgang':
+        header('Location: https://forms.gle/nhYtAyrbpRDxMi7r8');
+        die;
+        
     case 'www':
     default:
         header('Location: http://cyb.no');
