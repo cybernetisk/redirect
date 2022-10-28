@@ -123,6 +123,9 @@ switch(strtolower($subdomain))
     case 'bestill':
         header('Location: https://jira.cyb.no/servicedesk/customer/portal/1');
         die;
+    case 'okomail':
+        header('Location: https://groups.google.com/a/cyb.no/g/gruppe-okonomi');
+        die;
 
     case 'vask':
         header('Location: https://docs.google.com/spreadsheets/d/1ULbkuRfWzCbi3pgapfZaL2vsKAHbTHlSufSUvRWSi2g/edit#gid=0');
