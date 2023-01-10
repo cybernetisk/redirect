@@ -99,7 +99,7 @@ switch(strtolower($subdomain))
         header('Location: http://cyb.no/okonomi/');
         die;
     case 'svinn':
-        header('Location: https://in.cyb.no/varer/inventorycount/44/registrations');
+        header('Location: https://in.cyb.no/varer/inventorycount/47/registrations');
         die;
     case 'storesafen':
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdFZHU1BYVlZqV2VDeDF1MkFBY1dVNXc&usp=drive_web');
