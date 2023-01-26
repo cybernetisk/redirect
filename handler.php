@@ -105,7 +105,7 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdFZHU1BYVlZqV2VDeDF1MkFBY1dVNXc&usp=drive_web');
         die;
     case 'budsjett':
-        header('Location: https://docs.google.com/spreadsheets/d/103q1jbAU22ctShB5Gf-4U2Lh5A7MaMFRl0g7xHh9bTU/edit');
+        header('Location: https://docs.google.com/spreadsheets/d/1yO69i89SqF4VUvwnXPp-M2nm-_AiTTjtkWXId-3p1-E/edit#gid=0');
         die;
     case 'regnskap':
         header('Location: https://okoreports.cyb.no/');
