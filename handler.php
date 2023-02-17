@@ -450,6 +450,10 @@ switch(strtolower($subdomain))
     case 'tilgang':
         header('Location: https://forms.gle/nhYtAyrbpRDxMi7r8');
         die;
+    
+    case 'hjelp':
+        header('Location: https://forms.gle/uoc9PAuMpy5FqE218');
+        die;
         
     case 'www':
     default:
