@@ -393,7 +393,7 @@ switch(strtolower($subdomain))
         die;
         
     case 'kaferutiner':
-        header('Location: https://forms.gle/uoc9PAuMpy5FqE218');
+        header('Location: https://forms.gle/fUTQwzrHAKiRJZVx6');
         die;
 
     case 'kafefadder':
