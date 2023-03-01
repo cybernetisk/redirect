@@ -391,6 +391,10 @@ switch(strtolower($subdomain))
     case 'kafe':
         header('Location: https://docs.google.com/spreadsheets/d/1LQapnYb0pHq5wCXrbY2lxglP55NF78W69TEyQLVXS_I/edit?usp=sharing');
         die;
+        
+    case 'kaferutiner':
+        header('Location: https://forms.gle/uoc9PAuMpy5FqE218');
+        die;
 
     case 'kafefadder':
     case 'fadderkafe':
