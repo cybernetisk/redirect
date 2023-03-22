@@ -458,6 +458,17 @@ switch(strtolower($subdomain))
     case 'hjelp':
         header('Location: https://forms.gle/uoc9PAuMpy5FqE218');
         die;
+    
+    // Sosiale medie profiler:
+    case 'instagram':
+    case 'insta':
+        header('Location: https://www.instagram.com/cybernetisk/');
+        die;
+        
+    case 'facebook':
+    case 'fb':
+        header('Location: https://www.facebook.com/cybernetisk')
+        die;
         
     case 'www':
     default:
