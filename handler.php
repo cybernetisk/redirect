@@ -468,6 +468,7 @@ switch(strtolower($subdomain))
     case 'facebook':
     case 'fb':
         header('Location: https://www.facebook.com/cybernetisk')
+        die;
         
     case 'www':
     default:
