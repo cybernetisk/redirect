@@ -9,7 +9,7 @@ $subdomain = $match[1];
 
 switch(strtolower($subdomain))
 {
-    /* 
+    /*
      * Tre typer videresendinger:
      *  1. Ofte oppdaterte videresendinger (~1-2 i semesteret)
      *  2. Forholdsvis faste videresendinger (~1 per to år)
@@ -17,9 +17,9 @@ switch(strtolower($subdomain))
      */
 
 
-    /* 
+    /*
      * 2. Forholdsvis faste videresendinger
-     *  - URL-er som ikke skal oppdateres 
+     *  - URL-er som ikke skal oppdateres
      */
     case 'avtaler':
         header('Location: https://wiki.cyb.no/x/vpTJBQ');
@@ -50,7 +50,7 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSexknSTuznQfYB4ljz2F4U4bOsKV_QykCWr4rzslTbsXan83g/viewform?usp=sf_link');
         die;
 
-    // Generalforsamling stuff:    
+    // Generalforsamling stuff:
     case 'gf':
         // lenke til generalforsamlingens nyeste dagsorden
         header('Location: https://github.com/cybernetisk/docs/blob/master/generalforsamling/22H/Dagsorden_Generalforsamling_h22.pdf');
@@ -66,7 +66,7 @@ switch(strtolower($subdomain))
     case 'skjematilbakemelding':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLScusQ46sAd138aaYNb26TCurAbFRcDwcTclQcBu4k1xV8GxZw/viewform?usp=sf_link');
         die;
-        
+
     case 'docs':
         // UTDATERT: lenke til gamle dokumenter
         header('Location: http://cyb.no/docs/');
@@ -161,7 +161,7 @@ switch(strtolower($subdomain))
     case 'orden':
         header('Location: https://wiki.cyb.no/display/orden');
         die;
-        
+
         //smittesporing
     case '19':
     case 'corona':
@@ -170,7 +170,7 @@ switch(strtolower($subdomain))
     case 'virus':
         header('Location: https://forms.gle/EnxQsngoepMZydMt6');
         die;
-        
+
         // SM skjema:
     case 'ferdig':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSc48fb7TmGTdFEJ5At8z3e0dzdnmXM6GuNliry4nOJP1Z808Q/viewform');
@@ -180,13 +180,13 @@ switch(strtolower($subdomain))
     case 'mailingliste':
         header('Location: https://groups.google.com/a/cyb.no/g/aktiv');
         die;
-        
+
     case 'promotering':
     case 'promo':
     case 'pr':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSeh73w5IkAkWkY_RRPJixipvMPkyxMGfMPs45XDgV3994ykjA/viewform?usp=sf_link');
         die;
- 
+
     case 'ical':
 #header('Location: https://www.google.com/calendar/embed?src=cybernetisk.selskab@gmail.com&ctz=Europe/Oslo&gsessionid=OK');
         header('Location: https://in.cyb.no/api/cal/events.ics');
@@ -217,7 +217,7 @@ switch(strtolower($subdomain))
         die;
     case 'crowd':
         header('Location: https://jira.cyb.no/crowd/console/login.action');
-        die;    
+        die;
     case 'quiz':
         header('Location: https://docs.google.com/spreadsheets/d/1YOtvGEAYqiyFQIw4JNKsSI0uv7C0TFs2juudUllZN0c/edit?usp=sharing');
         die;
@@ -262,7 +262,7 @@ switch(strtolower($subdomain))
     case 'nei':
         header('Location: http://folk.uio.no/julianj/andreas/');
         die;
-    
+
     case 'parti':
         header('Location: http://partiboi.de');
         die;
@@ -342,7 +342,7 @@ switch(strtolower($subdomain))
     case 'tirsdag':
         header('Location: http://docs.google.com/spreadsheet/ccc?key=0AglUcicBmEzrdGVyNHoycVlxanBFM3pJWTFabEM1RXc');
         die;
-    case 'party': 
+    case 'party':
 # Ifi-festen i 2011 -- 200-årsjubileet
         header('Location: http://cyb.ifi.uio.no/festen/?lang=en');
         die;
@@ -381,7 +381,7 @@ switch(strtolower($subdomain))
         die;
     case 'fag':
         header('Location: https://docs.google.com/spreadsheets/d/1zCOUnSjTfnVJkdE9Fn8wIaHwuqwi_ROk7nXE0yQ1Kac/edit#gid=0 ');
-        die; 
+        die;
 
     case 'barjobb':
     case 'bar':
@@ -391,7 +391,7 @@ switch(strtolower($subdomain))
     case 'kafe':
         header('Location: https://docs.google.com/spreadsheets/d/1LQapnYb0pHq5wCXrbY2lxglP55NF78W69TEyQLVXS_I/edit?usp=sharing');
         die;
-        
+
     case 'kaferutiner':
         header('Location: https://forms.gle/fUTQwzrHAKiRJZVx6');
         die;
@@ -434,46 +434,46 @@ switch(strtolower($subdomain))
     case 'siifra':
         header('Location: https://docs.google.com/forms/d/1Ph-nLXNx_-pcaWKyzYuEMmrzc6E2Faq60cWegvnEtos');
         die;
-    
+
     case 'nykasse':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdP_P9HLB21GArdjv5oFUNIMt3M_FaALkdvHYa8ZEfVs9ZcEw/viewform?usp=sf_link');
         die;
-        
+
     case 'rydding':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdyHyTMaUEg1o-2v0j4ZLgXRPeu_gZ_lXAwcIQi8X-kuJeeeA/viewform');
         die;
-        
+
     case 'venteliste':
         header('Location: https://forms.gle/XfKvCnU5UXxj4f4L6');
         die;
-        
+
     case 'utlansoversikt':
         header('Location: https://docs.google.com/spreadsheets/d/1QvCbuJnq4EVmdDDaKU1GbcfXuJgVhH3T8I8CA8f_rhk/edit#gid=0');
         die;
-            
+
     case 'tilgang':
         header('Location: https://forms.gle/nhYtAyrbpRDxMi7r8');
         die;
-    
+
     case 'hjelp':
         header('Location: https://forms.gle/uoc9PAuMpy5FqE218');
         die;
-    
+
     // Sosiale medie profiler:
     case 'instagram':
     case 'insta':
         header('Location: https://www.instagram.com/cybernetisk/');
         die;
-        
+
     case 'facebook':
     case 'fb':
-        header('Location: https://www.facebook.com/cybernetisk')
+        header('Location: https://www.facebook.com/cybernetisk');
         die;
-        
+
     case 'www':
     default:
         header('Location: http://cyb.no');
 
-        // Slutt aa legg inn ting på bunn her, det overkjører default....| 
+        // Slutt aa legg inn ting på bunn her, det overkjører default....|
 }
 
