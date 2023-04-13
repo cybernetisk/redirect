@@ -147,6 +147,11 @@ switch(strtolower($subdomain))
     case 'drinkmeny':
         header('Location: https://docs.google.com/document/d/1dowUcGqDN-GwzEFWB1JHBXAbOXqSD7RRVVxjQErU6qE/edit?usp=sharing');
         die;
+        
+    case 'barrutiner':
+        header('Location: https://forms.gle/ugb6aWoCoYXm8vYM9');
+        die;
+        
     case '3t':
         header('Location: https://tripletex.no/execute/inboxVoucher?mode=1&contextId=2845076');
         die;
