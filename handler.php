@@ -476,7 +476,7 @@ switch(strtolower($subdomain))
         die;
         
     case 'ff':
-        header('https://drive.google.com/file/d/1EpHB8bYGync2V8Tciwj9hM_1w8yAWBWh/view?usp=sharing');
+        header('Location: https://drive.google.com/file/d/1EpHB8bYGync2V8Tciwj9hM_1w8yAWBWh/view?usp=sharing');
         die;
 
     case 'www':
