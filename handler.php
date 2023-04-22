@@ -474,6 +474,10 @@ switch(strtolower($subdomain))
     case 'fb':
         header('Location: https://www.facebook.com/cybernetisk');
         die;
+        
+    case 'ff':
+        header('https://github.com/fui/fui.github.io/blob/master/static/files/Sanghefte_for_Foreningsfesten_2023.pdf');
+        die;
 
     case 'www':
     default:
