@@ -476,7 +476,7 @@ switch(strtolower($subdomain))
         die;
         
     case 'ff':
-        header('https://github.com/fui/fui.github.io/blob/master/static/files/Sanghefte_for_Foreningsfesten_2023.pdf');
+        header('https://drive.google.com/file/d/1EpHB8bYGync2V8Tciwj9hM_1w8yAWBWh/view?usp=sharing');
         die;
 
     case 'www':
