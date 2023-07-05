@@ -11,5 +11,5 @@ https://github.com/cybernetisk/redirect/actions
 
 I GitHub har vi en secret `CYB_SSH_KEY` som inneholder en SSH-nøkkel
 som kun benyttes av dette repoet, som er registrert i
-`~openbsd/.ssh/authorized_keys`.
+`~puffy/.ssh/authorized_keys`.
 
