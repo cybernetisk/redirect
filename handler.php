@@ -166,6 +166,10 @@ switch(strtolower($subdomain))
     case 'orden':
         header('Location: https://wiki.cyb.no/display/orden');
         die;
+    case 'gammel':
+    case 'old':
+        header('Location: http://cyb.ifi.uio.no/gammelweb/');
+        die;
 
         //smittesporing
     case '19':
