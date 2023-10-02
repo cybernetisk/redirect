@@ -453,7 +453,7 @@ switch(strtolower($subdomain))
         die;
 
     case 'venteliste':
-        header('Location: https://forms.gle/XfKvCnU5UXxj4f4L6');
+        header('Location: https://forms.gle/a5vderovaw78zz7s7');
         die;
 
     case 'utlansoversikt':
