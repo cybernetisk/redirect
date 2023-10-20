@@ -338,7 +338,7 @@ switch(strtolower($subdomain))
         header('Location: https://drive.google.com/file/d/1ebKoOE9gYz5ImXp230I9MKRhLEcR8nE5/view?usp=share_link');
         die;
     case 'bordkart':
-        header('https://docs.google.com/spreadsheets/d/1HBPEfSn0kbtlADzmy7hkAnLBdIHv6xjgoyT0ULfZ9J4/edit?usp=sharing');
+        header('Location: https://docs.google.com/spreadsheets/d/1HBPEfSn0kbtlADzmy7hkAnLBdIHv6xjgoyT0ULfZ9J4/edit?usp=sharing');
         die;
 
     
