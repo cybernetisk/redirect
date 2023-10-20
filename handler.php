@@ -330,7 +330,13 @@ switch(strtolower($subdomain))
     case 'gjester':
         header('Location: https://docs.google.com/spreadsheets/d/1eFeU1kMJVow0rG1y49jgxUgWofqJUCKx2f1KDKJLn7A');
         die;
-
+    case 'sang':
+    case 'sanghefte'
+    case 'galla-sang'
+    case 'gallasang'
+    case 'galla_sang'
+        header('Location: https://drive.google.com/file/d/1ebKoOE9gYz5ImXp230I9MKRhLEcR8nE5/view?usp=share_link');
+        die;
 # Hyttetur
     case 'cabin':
     case 'salsa': # Fordi Adrian..
