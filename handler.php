@@ -56,6 +56,7 @@ switch(strtolower($subdomain))
         header('Location: https://github.com/peterhpo/docs/blob/master/generalforsamling/23V/Dagsorden_Generalforsamling_2023V.pdf');
         die;
     case 'forslagskjema':
+    case 'forslagsskjema':
     case 'vedtektsforslagskjema':
         header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdhWfLlt2OQUkI_0XY5LSrlMbvPIu-JVJ744hjQjXdMpx4psQ/viewform?usp=sf_link');
         die;
