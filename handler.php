@@ -264,7 +264,19 @@ switch(strtolower($subdomain))
     case 'lifeis':
     case 'tvang':
     case '2kr':
-        header('Location: https://docs.google.com/forms/d/e/1FAIpQLSdnUkCb8c5LOaqLazyHe38aZRNwvBcynotXHs-koAIpPDUujw/viewform?usp=sf_link');
+    case 'slay':
+    case 'clubpenguin':
+    case 'kleptomaner':
+    case 'fylleløfte':
+    case 'uforplikta':
+    case 'pingvinsquad':
+    case 'thereisnothingwecando':
+    case 'forglory':
+    case 'forhonor':
+        header('Location: https://nettskjema.no/a/378483');
+        die;
+    case 'ka':
+        header('Location: https://linktr.ee/ka.thas');
         die;
     case 'ny':
         header('Location: http://cyb.no/ny.html');
