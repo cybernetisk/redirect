@@ -353,7 +353,9 @@ switch(strtolower($subdomain))
     case 'bordkart':
         header('Location: https://docs.google.com/spreadsheets/d/1HBPEfSn0kbtlADzmy7hkAnLBdIHv6xjgoyT0ULfZ9J4/edit?usp=sharing');
         die;
-
+    case 'hoopla':
+        header('Location: cyb.hoopla.no');
+        die;
     
 # Hyttetur
     case 'cabin':
