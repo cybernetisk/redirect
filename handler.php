@@ -119,7 +119,7 @@ switch(strtolower($subdomain))
         die;
     case 'refundering':
     case 'utlegg':
-        header('Location: https://cyb.no/okonomi/skjemaer/For%20alle/Refunderingsskjema-siste.pdf');
+        header('Location: https://nettskjema.no/a/cyb-utlegg');
         die;
     case 'bestill':
         header('Location: https://jira.cyb.no/servicedesk/customer/portal/1');
