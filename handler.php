@@ -509,7 +509,7 @@ switch(strtolower($subdomain))
         header('Location: https://drive.google.com/file/d/1EpHB8bYGync2V8Tciwj9hM_1w8yAWBWh/view?usp=sharing');
         die;
 
-    case: 'redirect':
+    case 'redirect':
         header('Location: https://github.com/cybernetisk/redirect/blob/master/handler.php');
         die;
 
