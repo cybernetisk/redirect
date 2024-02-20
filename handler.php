@@ -97,6 +97,7 @@ switch(strtolower($subdomain))
         // ØKONOMIRELATERT
     case 'okonomi':
     case 'oko':
+    case 'øko':
         header('Location: http://cyb.no/okonomi/');
         die;
     case 'svinn':
@@ -106,7 +107,7 @@ switch(strtolower($subdomain))
         header('Location: https://docs.google.com/spreadsheet/ccc?key=0AsmINoGULmbPdFZHU1BYVlZqV2VDeDF1MkFBY1dVNXc&usp=drive_web');
         die;
     case 'budsjett':
-        header('Location: https://docs.google.com/spreadsheets/d/1yO69i89SqF4VUvwnXPp-M2nm-_AiTTjtkWXId-3p1-E/edit#gid=0');
+        header('Location: https://docs.google.com/spreadsheets/d/1r7LBYX12H7uEiZbEYF2rbw2AAVTUuYHE9olz0YViHf8/edit#gid=1835705167');
         die;
     case 'regnskap':
         header('Location: https://okoreports.cyb.no/');
@@ -125,9 +126,17 @@ switch(strtolower($subdomain))
         header('Location: https://jira.cyb.no/servicedesk/customer/portal/1');
         die;
     case 'okomail':
+    case 'omail':
+    case 'ømail':
         header('Location: https://groups.google.com/a/cyb.no/g/gruppe-okonomi');
         die;
-
+    case 'kort':
+    case 'card':
+    case 'cybkort':
+    case 'cybcard':
+        header('Location: https://nettskjema.no/a/396301');
+        die;
+    
     case 'vask':
         header('Location: https://docs.google.com/spreadsheets/d/1ULbkuRfWzCbi3pgapfZaL2vsKAHbTHlSufSUvRWSi2g/edit#gid=0');
         die;
