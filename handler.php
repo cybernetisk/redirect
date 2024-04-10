@@ -515,7 +515,7 @@ switch(strtolower($subdomain))
         die;
         
     case 'ff':
-        header('Location: https://drive.google.com/file/d/1EpHB8bYGync2V8Tciwj9hM_1w8yAWBWh/view?usp=sharing');
+        header('Location: https://drive.google.com/file/d/1jR0pOputA8A3HVQv85gq_DJsVMnDlPDe/view?usp=sharing');
         die;
 
     case 'redirect':
